@@ -1,0 +1,882 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\verifyphoneresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\verifyphoneresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\verifyphoneresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\verifyphoneresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\ratelimiter\\iratelimiterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\ratelimiter\\iratelimiterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\ratelimiter\\patientloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\ratelimiter\\patientloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\ratelimiter\\redisratelimiterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\ratelimiter\\redisratelimiterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\migrations\\20251106021340_initdatabaseschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\migrations\\20251106021340_initdatabaseschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\doctorservice\\doctorregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\doctorservice\\doctorregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\ratelimiter\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\ratelimiter\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\models\\emergencycontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\models\\emergencycontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\controllers\\doctorregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\controllers\\doctorregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\controllers\\doctorlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\controllers\\doctorlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\controllers\\patientlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\controllers\\patientlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\phoneloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\phoneloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\doctorservice\\doctorloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\doctorservice\\doctorloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\interfaces\\idoctorloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\interfaces\\idoctorloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\pinloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\pinloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\interfaces\\ipatientloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\interfaces\\ipatientloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\pinloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\pinloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\phoneloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\phoneloginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\interfaces\\idoctorregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\interfaces\\idoctorregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\verifyphonerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\verifyphonerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\admin\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\admin\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\practiceprofilerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\practiceprofilerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\identityrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\identityrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\doctordetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\doctordetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\credentialsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\credentialsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\compliancerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\compliancerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\verifyphonerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\verifyphonerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\reviewactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\reviewactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\doctorlistitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\doctorlistitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\services\\interfaces\\iregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\services\\interfaces\\iregistrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\doctors\\schedulerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\doctors\\schedulerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\personalinforequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\personalinforequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\securitysetuprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\securitysetuprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\selectcategoriesrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\selectcategoriesrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\languagepreferencesrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\languagepreferencesrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\telmmed.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\telmmed.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 12,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Dockerfile",
+              "RelativeToolTip": "TelmMed.Api\\Dockerfile",
+              "ViewState": "AgIAACUAAACAZmZmZmYuwDAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-14T02:45:33.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\RegistrationController.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "TelmMed.Api\\Controllers\\RegistrationController.cs",
+              "ViewState": "AgIAABYAAABAzMzMzMwuwBoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:38:16.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRateLimiterService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\IRateLimiterService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\RateLimiter\\IRateLimiterService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\IRateLimiterService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\RateLimiter\\IRateLimiterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VerifyPhoneResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneResponseDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneResponseDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneResponseDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T05:23:22.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VerifyPhoneResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\VerifyPhoneResponseDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\VerifyPhoneResponseDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\VerifyPhoneResponseDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\VerifyPhoneResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:12.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "TelmMed.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\appsettings.json",
+              "RelativeToolTip": "TelmMed.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T01:22:39.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Program.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Program.cs",
+              "RelativeToolTip": "TelmMed.Api\\Program.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAowLQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:11.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RedisRateLimiterService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\RedisRateLimiterService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\RateLimiter\\RedisRateLimiterService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\RedisRateLimiterService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\RateLimiter\\RedisRateLimiterService.cs",
+              "ViewState": "AgIAABwAAADgzMzMzMwuwD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PatientLoginService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\PatientLoginService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\RateLimiter\\PatientLoginService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\PatientLoginService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\RateLimiter\\PatientLoginService.cs",
+              "ViewState": "AgIAADYAAAAgAAAAAAAqwEEAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:51:49.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20251106021340_InitDatabaseSchema.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Migrations\\20251106021340_InitDatabaseSchema.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Migrations\\20251106021340_InitDatabaseSchema.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Migrations\\20251106021340_InitDatabaseSchema.cs",
+              "RelativeToolTip": "TelmMed.Api\\Migrations\\20251106021340_InitDatabaseSchema.cs",
+              "ViewState": "AgIAAJgAAAAAzszMzMwYwLUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T02:13:50.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DoctorRegistrationService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\DoctorService\\DoctorRegistrationService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\DoctorService\\DoctorRegistrationService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\DoctorService\\DoctorRegistrationService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\DoctorService\\DoctorRegistrationService.cs",
+              "ViewState": "AgIAADQAAADAzMzMzMwUwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:14.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegistrationService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\RegistrationService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\RateLimiter\\RegistrationService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\RegistrationService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\RateLimiter\\RegistrationService.cs",
+              "ViewState": "AgIAABUAAACAmZmZmZktwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IJwtService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IJwtService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IJwtService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\Interfaces\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:39:17.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\JwtService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\JwtService.cs",
+              "ViewState": "AgIAAC4AAADAzMzMzMwmwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "TelmMed.Api\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAowDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:09.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\Patient.cs",
+              "RelativeToolTip": "TelmMed.Api\\Models\\Patient.cs",
+              "ViewState": "AgIAACUAAAAAZmZmZmY5wCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:12.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmergencyContact.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\EmergencyContact.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Models\\EmergencyContact.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\EmergencyContact.cs",
+              "RelativeToolTip": "TelmMed.Api\\Models\\EmergencyContact.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:12.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\Doctor.cs",
+              "RelativeToolTip": "TelmMed.Api\\Models\\Doctor.cs",
+              "ViewState": "AgIAAFkAAAAgMzMzMzMlwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:14.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TelmMed.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-06T01:04:26.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DoctorRegistrationController.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\DoctorRegistrationController.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\DoctorRegistrationController.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\DoctorRegistrationController.cs",
+              "RelativeToolTip": "TelmMed.Api\\Controllers\\DoctorRegistrationController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:38:14.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PatientLoginController.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\PatientLoginController.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\PatientLoginController.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\PatientLoginController.cs",
+              "RelativeToolTip": "TelmMed.Api\\Controllers\\PatientLoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:53:43.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PhoneLoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PhoneLoginRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\PhoneLoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PhoneLoginRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\PhoneLoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:04:50.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IDoctorLoginService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IDoctorLoginService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IDoctorLoginService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IDoctorLoginService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\Interfaces\\IDoctorLoginService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:09:21.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DoctorLoginService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\DoctorService\\DoctorLoginService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\DoctorService\\DoctorLoginService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\DoctorService\\DoctorLoginService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\DoctorService\\DoctorLoginService.cs",
+              "ViewState": "AgIAACoAAACAZmZmZmYGwA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:11:29.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DoctorLoginController.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\DoctorLoginController.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\DoctorLoginController.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\DoctorLoginController.cs",
+              "RelativeToolTip": "TelmMed.Api\\Controllers\\DoctorLoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:14:46.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\LoginResponseDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:07:38.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PinLoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PinLoginRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\PinLoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PinLoginRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\PinLoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:06:30.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IPatientLoginService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IPatientLoginService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IPatientLoginService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IPatientLoginService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\Interfaces\\IPatientLoginService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:50:12.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\LoginResponseDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:48:44.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PinLoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PinLoginRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\PinLoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PinLoginRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\PinLoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:47:32.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PhoneLoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PhoneLoginRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\PhoneLoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PhoneLoginRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\PhoneLoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:46:04.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Admin\\AdminService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Admin\\AdminService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Admin\\AdminService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\Admin\\AdminService.cs",
+              "ViewState": "AgIAADcAAABgZmZmZmYwwBgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:56:00.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IDoctorRegistrationService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IDoctorRegistrationService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IDoctorRegistrationService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IDoctorRegistrationService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\Interfaces\\IDoctorRegistrationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:26:37.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "VerifyPhoneRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\VerifyPhoneRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\VerifyPhoneRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\VerifyPhoneRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\VerifyPhoneRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:12.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PracticeProfileRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PracticeProfileRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\PracticeProfileRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PracticeProfileRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\PracticeProfileRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IdentityRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\IdentityRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\IdentityRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\IdentityRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\IdentityRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:14.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DoctorDetailDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\DoctorDetailDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\DoctorDetailDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\DoctorDetailDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\DoctorDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:52:18.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CredentialsRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\CredentialsRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\CredentialsRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\CredentialsRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\CredentialsRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ComplianceRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ComplianceRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\ComplianceRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ComplianceRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\ComplianceRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "TelmMed.Api\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:38:20.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "TelmMed.Api\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAA0AAADAzMzMzMw3wEwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T05:04:35.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "VerifyPhoneRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:14.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IAdminService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IAdminService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\Interfaces\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:54:23.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ReviewActionDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ReviewActionDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\ReviewActionDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ReviewActionDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\ReviewActionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:53:08.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DoctorListItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\DoctorListItemDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\DoctorListItemDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\DoctorListItemDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\DoctorListItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:51:12.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IRegistrationService.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IRegistrationService.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IRegistrationService.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IRegistrationService.cs",
+              "RelativeToolTip": "TelmMed.Api\\Services\\Interfaces\\IRegistrationService.cs",
+              "ViewState": "AgIAAAoAAADAzMzMzMwgwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:39:22.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ScheduleRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ScheduleRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\ScheduleRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ScheduleRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\Doctors\\ScheduleRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:14.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PersonalInfoRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PersonalInfoRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\PersonalInfoRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PersonalInfoRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\PersonalInfoRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "SecuritySetupRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\SecuritySetupRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\SecuritySetupRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\SecuritySetupRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\SecuritySetupRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:13.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "SelectCategoriesRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\SelectCategoriesRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\SelectCategoriesRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\SelectCategoriesRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\SelectCategoriesRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:12.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "LanguagePreferencesRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\LanguagePreferencesRequestDto.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\LanguagePreferencesRequestDto.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\LanguagePreferencesRequestDto.cs",
+              "RelativeToolTip": "TelmMed.Api\\DTOs\\LanguagePreferencesRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:12.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "TelmMed.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\TelmMed.Api.csproj",
+              "RelativeDocumentMoniker": "TelmMed.Api\\TelmMed.Api.csproj",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\TelmMed.Api.csproj",
+              "RelativeToolTip": "TelmMed.Api\\TelmMed.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-04T04:43:12.19Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 388,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

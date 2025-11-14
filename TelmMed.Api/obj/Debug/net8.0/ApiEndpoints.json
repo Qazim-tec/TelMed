@@ -1,0 +1,320 @@
+[
+  {
+    "ContainingType": "TelmMed.Api.Controllers.AdminController",
+    "Method": "GetDoctor",
+    "RelativePath": "api/admin/doctors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.AdminController",
+    "Method": "ReviewDoctor",
+    "RelativePath": "api/admin/doctors/{id}/review",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.ReviewActionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.AdminController",
+    "Method": "GetPendingDoctors",
+    "RelativePath": "api/admin/doctors/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorRegistrationController",
+    "Method": "Complete",
+    "RelativePath": "api/doctor/complete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorRegistrationController",
+    "Method": "Compliance",
+    "RelativePath": "api/doctor/compliance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.ComplianceRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorRegistrationController",
+    "Method": "Credentials",
+    "RelativePath": "api/doctor/credentials",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.CredentialsRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorRegistrationController",
+    "Method": "Identity",
+    "RelativePath": "api/doctor/identity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.IdentityRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorLoginController",
+    "Method": "ValidatePhone",
+    "RelativePath": "api/doctor/login/phone",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.PhoneLoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorLoginController",
+    "Method": "VerifyPin",
+    "RelativePath": "api/doctor/login/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.PinLoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorRegistrationController",
+    "Method": "Practice",
+    "RelativePath": "api/doctor/practice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.PracticeProfileRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorRegistrationController",
+    "Method": "Schedule",
+    "RelativePath": "api/doctor/schedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.ScheduleRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.DoctorRegistrationController",
+    "Method": "Verify",
+    "RelativePath": "api/doctor/verify-phone",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.Doctors.VerifyPhoneRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.PatientLoginController",
+    "Method": "ValidatePhone",
+    "RelativePath": "api/patient/login/phone",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.PhoneLoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.PatientLoginController",
+    "Method": "VerifyPin",
+    "RelativePath": "api/patient/login/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.PinLoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.RegistrationController",
+    "Method": "SaveCategories",
+    "RelativePath": "api/registration/categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.SelectCategoriesRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.RegistrationController",
+    "Method": "Complete",
+    "RelativePath": "api/registration/complete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.SecuritySetupRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.RegistrationController",
+    "Method": "SaveLanguage",
+    "RelativePath": "api/registration/language",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.LanguagePreferencesRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.RegistrationController",
+    "Method": "SavePersonalInfo",
+    "RelativePath": "api/registration/personal-info",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.PersonalInfoRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.RegistrationController",
+    "Method": "VerifyPhone",
+    "RelativePath": "api/registration/verify-phone",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TelmMed.Api.DTOs.VerifyPhoneRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelmMed.Api.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TelmMed.Api.WeatherForecast, TelmMed.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

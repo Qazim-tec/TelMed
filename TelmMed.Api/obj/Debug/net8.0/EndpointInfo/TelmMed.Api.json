@@ -1,0 +1,1057 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "TelmMed API",
+    "description": "Secure onboarding with Firebase + JWT + PostgreSQL",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/admin/doctors/pending": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/doctors/{id}": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/doctors/{id}/review": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ReviewActionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ReviewActionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ReviewActionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/login/phone": {
+      "post": {
+        "tags": [
+          "DoctorLogin"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PhoneLoginRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PhoneLoginRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PhoneLoginRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/login/verify": {
+      "post": {
+        "tags": [
+          "DoctorLogin"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PinLoginRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PinLoginRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PinLoginRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/verify-phone": {
+      "post": {
+        "tags": [
+          "DoctorRegistration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.VerifyPhoneRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.VerifyPhoneRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.VerifyPhoneRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/identity": {
+      "post": {
+        "tags": [
+          "DoctorRegistration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.IdentityRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.IdentityRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.IdentityRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/practice": {
+      "post": {
+        "tags": [
+          "DoctorRegistration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PracticeProfileRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PracticeProfileRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.PracticeProfileRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/credentials": {
+      "post": {
+        "tags": [
+          "DoctorRegistration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.CredentialsRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.CredentialsRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.CredentialsRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/compliance": {
+      "post": {
+        "tags": [
+          "DoctorRegistration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ComplianceRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ComplianceRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ComplianceRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/schedule": {
+      "post": {
+        "tags": [
+          "DoctorRegistration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ScheduleRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ScheduleRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.ScheduleRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/doctor/complete": {
+      "post": {
+        "tags": [
+          "DoctorRegistration"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/patient/login/phone": {
+      "post": {
+        "tags": [
+          "PatientLogin"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PhoneLoginRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PhoneLoginRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PhoneLoginRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/patient/login/verify": {
+      "post": {
+        "tags": [
+          "PatientLogin"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PinLoginRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PinLoginRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PinLoginRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/registration/verify-phone": {
+      "post": {
+        "tags": [
+          "Registration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.VerifyPhoneRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.VerifyPhoneRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.VerifyPhoneRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/registration/categories": {
+      "post": {
+        "tags": [
+          "Registration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.SelectCategoriesRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.SelectCategoriesRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.SelectCategoriesRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/registration/language": {
+      "post": {
+        "tags": [
+          "Registration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.LanguagePreferencesRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.LanguagePreferencesRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.LanguagePreferencesRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/registration/personal-info": {
+      "post": {
+        "tags": [
+          "Registration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PersonalInfoRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PersonalInfoRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.PersonalInfoRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/registration/complete": {
+      "post": {
+        "tags": [
+          "Registration"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.SecuritySetupRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.SecuritySetupRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelmMed.Api.DTOs.SecuritySetupRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TelmMed.Api.WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TelmMed.Api.WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TelmMed.Api.WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TelmMed.Api.DTOs.Doctors.AlternativeSlotDto": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "time": {
+            "type": "string",
+            "format": "date-span"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.ComplianceRequestDto": {
+        "type": "object",
+        "properties": {
+          "acceptTerms": {
+            "type": "boolean"
+          },
+          "acceptPrivacy": {
+            "type": "boolean"
+          },
+          "acceptDataUse": {
+            "type": "boolean"
+          },
+          "acceptTelemedicine": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.CredentialsRequestDto": {
+        "type": "object",
+        "properties": {
+          "medicalLicense": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          },
+          "mdcnCertificate": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          },
+          "cv": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          },
+          "ninSlip": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          },
+          "passport": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          },
+          "additionalCertificate": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.IdentityRequestDto": {
+        "type": "object",
+        "properties": {
+          "legalName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sex": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "alternatePhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "workEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "residentialAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "lga": {
+            "type": "string",
+            "nullable": true
+          },
+          "pin": {
+            "type": "string",
+            "nullable": true
+          },
+          "enableBiometric": {
+            "type": "boolean"
+          },
+          "nextOfKin": {
+            "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.NextOfKinDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.LanguageDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "proficiency": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.NextOfKinDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "relationship": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.PhoneLoginRequestDto": {
+        "type": "object",
+        "properties": {
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.PinLoginRequestDto": {
+        "type": "object",
+        "properties": {
+          "pin": {
+            "type": "string",
+            "nullable": true
+          },
+          "useBiometric": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.PracticeProfileRequestDto": {
+        "type": "object",
+        "properties": {
+          "specialty": {
+            "type": "string",
+            "nullable": true
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.LanguageDto"
+            },
+            "nullable": true
+          },
+          "currentWorkplace": {
+            "type": "string",
+            "nullable": true
+          },
+          "shortBio": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.ReviewActionDto": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/TelmMed.Api.Models.DoctorStatus"
+          },
+          "rejectionReason": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.ScheduleRequestDto": {
+        "type": "object",
+        "properties": {
+          "preferredDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "preferredTime": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelmMed.Api.DTOs.Doctors.AlternativeSlotDto"
+            },
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.Doctors.VerifyPhoneRequestDto": {
+        "type": "object",
+        "properties": {
+          "firebaseIdToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.EmergencyContactDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "relationship": {
+            "type": "string",
+            "nullable": true
+          },
+          "allowLocationTracking": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.LanguagePreferencesRequestDto": {
+        "type": "object",
+        "properties": {
+          "preferredLanguage": {
+            "type": "string",
+            "nullable": true
+          },
+          "alternativeLanguage": {
+            "type": "string",
+            "nullable": true
+          },
+          "communicationTone": {
+            "type": "string",
+            "nullable": true
+          },
+          "communicationChannels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.PersonalInfoRequestDto": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sexAtBirth": {
+            "type": "string",
+            "nullable": true
+          },
+          "medicalConditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "bloodGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "genotype": {
+            "type": "string",
+            "nullable": true
+          },
+          "allergies": {
+            "type": "string",
+            "nullable": true
+          },
+          "currentMedications": {
+            "type": "string",
+            "nullable": true
+          },
+          "agreesToTerms": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.PhoneLoginRequestDto": {
+        "type": "object",
+        "properties": {
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.PinLoginRequestDto": {
+        "type": "object",
+        "properties": {
+          "pin": {
+            "type": "string",
+            "nullable": true
+          },
+          "useBiometric": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.SecuritySetupRequestDto": {
+        "type": "object",
+        "properties": {
+          "pin": {
+            "type": "string",
+            "nullable": true
+          },
+          "enableBiometric": {
+            "type": "boolean"
+          },
+          "emergencyContacts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TelmMed.Api.DTOs.EmergencyContactDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.SelectCategoriesRequestDto": {
+        "type": "object",
+        "properties": {
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.DTOs.VerifyPhoneRequestDto": {
+        "type": "object",
+        "properties": {
+          "firebaseIdToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TelmMed.Api.Models.DoctorStatus": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "TelmMed.Api.WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header. Example: `Bearer {token}`",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}
