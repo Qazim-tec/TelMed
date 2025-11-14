@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\telmmed.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\telmmed.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -205,10 +209,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dtos\\languagepreferencesrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dtos\\languagepreferencesrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\telmmed.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\telmmed.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -218,24 +218,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 12,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -244,26 +228,14 @@
               "RelativeDocumentMoniker": "TelmMed.Api\\Dockerfile",
               "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Dockerfile",
               "RelativeToolTip": "TelmMed.Api\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-11-14T02:45:33.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegistrationController.cs",
-              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\RegistrationController.cs",
-              "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\RegistrationController.cs",
-              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\RegistrationController.cs",
-              "RelativeToolTip": "TelmMed.Api\\Controllers\\RegistrationController.cs",
-              "ViewState": "AgIAABYAAABAzMzMzMwuwBoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T04:38:16.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IRateLimiterService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\IRateLimiterService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\RateLimiter\\IRateLimiterService.cs",
@@ -275,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "VerifyPhoneResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneResponseDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneResponseDto.cs",
@@ -287,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "VerifyPhoneResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\VerifyPhoneResponseDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\VerifyPhoneResponseDto.cs",
@@ -299,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\appsettings.json",
               "RelativeDocumentMoniker": "TelmMed.Api\\appsettings.json",
@@ -311,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Program.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Program.cs",
@@ -319,12 +291,36 @@
               "RelativeToolTip": "TelmMed.Api\\Program.cs",
               "ViewState": "AgIAAKUAAAAAAAAAAAAowLQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T04:43:11.432Z",
+              "WhenOpened": "2025-11-04T04:43:11.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelmMed.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\TelmMed.Api.csproj",
+              "RelativeDocumentMoniker": "TelmMed.Api\\TelmMed.Api.csproj",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\TelmMed.Api.csproj",
+              "RelativeToolTip": "TelmMed.Api\\TelmMed.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-04T04:43:12.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\RegistrationController.cs",
+              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "TelmMed.Api\\Controllers\\RegistrationController.cs",
+              "ViewState": "AgIAABYAAABAzMzMzMwuwBoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:38:16.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "RedisRateLimiterService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\RedisRateLimiterService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\RateLimiter\\RedisRateLimiterService.cs",
@@ -336,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PatientLoginService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\PatientLoginService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\RateLimiter\\PatientLoginService.cs",
@@ -348,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "20251106021340_InitDatabaseSchema.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Migrations\\20251106021340_InitDatabaseSchema.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Migrations\\20251106021340_InitDatabaseSchema.cs",
@@ -360,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "DoctorRegistrationService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\DoctorService\\DoctorRegistrationService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\DoctorService\\DoctorRegistrationService.cs",
@@ -372,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "RegistrationService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\RateLimiter\\RegistrationService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\RateLimiter\\RegistrationService.cs",
@@ -384,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IJwtService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IJwtService.cs",
@@ -396,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\JwtService.cs",
@@ -408,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Data\\AppDbContext.cs",
@@ -420,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Patient.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\Patient.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Models\\Patient.cs",
@@ -432,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "EmergencyContact.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\EmergencyContact.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Models\\EmergencyContact.cs",
@@ -444,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Models\\Doctor.cs",
@@ -456,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "TelmMed.Api\\Properties\\launchSettings.json",
@@ -468,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "DoctorRegistrationController.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\DoctorRegistrationController.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\DoctorRegistrationController.cs",
@@ -480,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "PatientLoginController.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\PatientLoginController.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\PatientLoginController.cs",
@@ -492,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "PhoneLoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PhoneLoginRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\PhoneLoginRequestDto.cs",
@@ -504,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IDoctorLoginService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IDoctorLoginService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IDoctorLoginService.cs",
@@ -516,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "DoctorLoginService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\DoctorService\\DoctorLoginService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\DoctorService\\DoctorLoginService.cs",
@@ -528,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DoctorLoginController.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\DoctorLoginController.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\DoctorLoginController.cs",
@@ -540,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "LoginResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\LoginResponseDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\LoginResponseDto.cs",
@@ -552,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "PinLoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PinLoginRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\PinLoginRequestDto.cs",
@@ -564,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "IPatientLoginService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IPatientLoginService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IPatientLoginService.cs",
@@ -576,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "LoginResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\LoginResponseDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\LoginResponseDto.cs",
@@ -588,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "PinLoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PinLoginRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\PinLoginRequestDto.cs",
@@ -600,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "PhoneLoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PhoneLoginRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\PhoneLoginRequestDto.cs",
@@ -612,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "AdminService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Admin\\AdminService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Admin\\AdminService.cs",
@@ -624,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "IDoctorRegistrationService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IDoctorRegistrationService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IDoctorRegistrationService.cs",
@@ -636,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "VerifyPhoneRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\VerifyPhoneRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\VerifyPhoneRequestDto.cs",
@@ -648,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "PracticeProfileRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\PracticeProfileRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\PracticeProfileRequestDto.cs",
@@ -660,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "IdentityRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\IdentityRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\IdentityRequestDto.cs",
@@ -672,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "DoctorDetailDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\DoctorDetailDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\DoctorDetailDto.cs",
@@ -684,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "CredentialsRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\CredentialsRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\CredentialsRequestDto.cs",
@@ -696,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "ComplianceRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ComplianceRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\ComplianceRequestDto.cs",
@@ -708,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\WeatherForecastController.cs",
@@ -720,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Controllers\\AdminController.cs",
@@ -732,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "VerifyPhoneRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\VerifyPhoneRequestDto.cs",
@@ -744,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "IAdminService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IAdminService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IAdminService.cs",
@@ -756,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "ReviewActionDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ReviewActionDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\ReviewActionDto.cs",
@@ -768,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "DoctorListItemDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\DoctorListItemDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\DoctorListItemDto.cs",
@@ -780,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "IRegistrationService.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Services\\Interfaces\\IRegistrationService.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Services\\Interfaces\\IRegistrationService.cs",
@@ -792,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "ScheduleRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\Doctors\\ScheduleRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\Doctors\\ScheduleRequestDto.cs",
@@ -804,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "PersonalInfoRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\PersonalInfoRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\PersonalInfoRequestDto.cs",
@@ -816,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "SecuritySetupRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\SecuritySetupRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\SecuritySetupRequestDto.cs",
@@ -828,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "SelectCategoriesRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\SelectCategoriesRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\SelectCategoriesRequestDto.cs",
@@ -840,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "LanguagePreferencesRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\DTOs\\LanguagePreferencesRequestDto.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\DTOs\\LanguagePreferencesRequestDto.cs",
@@ -849,28 +845,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T04:43:12.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "TelmMed.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\TelmMed.Api.csproj",
-              "RelativeDocumentMoniker": "TelmMed.Api\\TelmMed.Api.csproj",
-              "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\TelmMed.Api.csproj",
-              "RelativeToolTip": "TelmMed.Api\\TelmMed.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-04T04:43:12.19Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 388,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

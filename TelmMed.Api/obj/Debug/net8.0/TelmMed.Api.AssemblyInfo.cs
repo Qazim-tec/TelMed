@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TelmMed.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c99433c72842d29ce8944650b47d2a2bae2e239")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c752131bbddb10ad82f1a2f4c57b9fa33bc075a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TelmMed.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TelmMed.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

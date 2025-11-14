@@ -1,45 +1,35 @@
-# -------------------------------------------------
-# 1. Base runtime (used for VS fast mode & final)
-# -------------------------------------------------
+# ---- Base runtime (VS + Render) ----
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER $APP_UID
 WORKDIR /app
 EXPOSE 80
 EXPOSE 8081
 
-# -------------------------------------------------
-# 2. Build stage
-# -------------------------------------------------
+# ---- Build ----
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Copy project file (CORRECT PATH)
-COPY ["TelmMed.Api.csproj", "TelmMed.Api/"]
+# Copy .csproj
+COPY TelmMed.Api.csproj ./
 
 # Restore
-RUN dotnet restore "./TelmMed.Api/TelmMed.Api.csproj"
+RUN dotnet restore
 
-# Copy source
+# Copy all source
 COPY . .
 
 # Build
-WORKDIR "/src/TelmMed.Api"
-RUN dotnet build "./TelmMed.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "TelmMed.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# -------------------------------------------------
-# 3. Publish stage
-# -------------------------------------------------
+# ---- Publish ----
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./TelmMed.Api.csproj" \
+RUN dotnet publish "TelmMed.Api.csproj" \
     -c $BUILD_CONFIGURATION \
     -o /app/publish \
     /p:UseAppHost=false
 
-# -------------------------------------------------
-# 4. Final runtime image
-# -------------------------------------------------
+# ---- Final ----
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
