@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|solutionrelative:telmmed.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ACB03B47-D4FC-4253-843C-ECD284BB6578}|TelmMed.Api\\TelmMed.Api.csproj|c:\\users\\qazim\\documents\\blogsite\\telmmed.api\\telmmed.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -218,7 +218,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 12,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -238,13 +238,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Dockerfile",
               "RelativeDocumentMoniker": "TelmMed.Api\\Dockerfile",
               "ToolTip": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Dockerfile",
               "RelativeToolTip": "TelmMed.Api\\Dockerfile",
-              "ViewState": "AgIAACUAAACAZmZmZmYuwDAAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-11-14T02:45:33.661Z",
               "EditorCaption": ""
@@ -259,8 +259,7 @@
               "RelativeToolTip": "TelmMed.Api\\Controllers\\RegistrationController.cs",
               "ViewState": "AgIAABYAAABAzMzMzMwuwBoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T04:38:16.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T04:38:16.822Z"
             },
             {
               "$type": "Document",
@@ -308,12 +307,11 @@
               "RelativeToolTip": "TelmMed.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-04T01:22:39.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T01:22:39.103Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\QAZIM\\Documents\\Blogsite\\TelmMed.Api\\TelmMed.Api\\Program.cs",
               "RelativeDocumentMoniker": "TelmMed.Api\\Program.cs",
