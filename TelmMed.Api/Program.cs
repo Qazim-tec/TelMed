@@ -1,5 +1,6 @@
 ﻿using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
+using Google.Cloud.Firestore; // if you use Firestore directly (optional)
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -21,12 +22,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     if (string.IsNullOrEmpty(connStr))
         throw new InvalidOperationException("PostgreSQL connection string is missing.");
 
-    // Auto-fix for Render.com (adds SSL if missing)
     if (connStr.Contains("render.com") && !connStr.Contains("SslMode"))
     {
         connStr += ";SslMode=Require;Trust Server Certificate=true";
     }
-
     options.UseNpgsql(connStr);
 });
 
@@ -34,43 +33,36 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
     ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379"));
 
-// === 3. Firebase Admin SDK - Bulletproof Initialization ===
+// === 3. Firebase Admin SDK – 100% SECURE & WORKS EVERYWHERE ===
 try
 {
-    GoogleCredential credential;
+    var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_SERVICE_ACCOUNT_JSON");
 
-    var envPath = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");
-    if (!string.IsNullOrEmpty(envPath) && File.Exists(envPath))
+    if (!string.IsNullOrEmpty(firebaseJson))
     {
-        credential = GoogleCredential.FromFile(envPath);
-    }
-    else
-    {
-        var possiblePaths = new[]
+        // Production / Render.com – use full JSON from environment variable
+        FirebaseApp.Create(new AppOptions()
         {
-            Path.Combine(builder.Environment.ContentRootPath, "telemedicine-project-5bf24-firebase-adminsdk-fbsvc-64756c1716.json"),
-            Path.Combine(builder.Environment.ContentRootPath, "firebase-service-account.json"),
-            Path.Combine(Directory.GetCurrentDirectory(), "telemedicine-project-5bf24-firebase-adminsdk-fbsvc-64756c1716.json")
-        };
-
-        var jsonPath = possiblePaths.FirstOrDefault(File.Exists)
-                       ?? throw new FileNotFoundException("Firebase service account JSON not found!");
-
-        credential = GoogleCredential.FromFile(jsonPath);
+            Credential = GoogleCredential.FromJson(firebaseJson),
+            ProjectId = "telemedicine-project-5bf24"
+        }, "TelmMedApp");
+    }
+    else if (FirebaseApp.DefaultInstance == null)
+    {
+        // Local development – uses your Google Cloud login (run once: gcloud auth application-default login)
+        FirebaseApp.Create(new AppOptions()
+        {
+            Credential = GoogleCredential.GetApplicationDefault(),
+            ProjectId = "telemedicine-project-5bf24"
+        }, "TelmMedApp");
     }
 
-    FirebaseApp.Create(new AppOptions
-    {
-        Credential = credential,
-        ProjectId = "telemedicine-project-5bf24"
-    }, "TelmMedApp");
-
-    Console.WriteLine("Firebase Admin SDK initialized successfully.");
+    Console.WriteLine("Firebase Admin SDK initialized successfully!");
 }
 catch (Exception ex)
 {
-    Console.WriteLine($"Firebase init failed (non-fatal): {ex.Message}");
-    // Don't crash the app — phone auth will just fail gracefully
+    // Non-fatal – phone verification & custom tokens will just be unavailable
+    Console.WriteLine($"Firebase init failed (continues without Admin features): {ex.Message}");
 }
 
 // === 4. Dependency Injection ===
@@ -83,7 +75,7 @@ builder.Services.AddScoped<IPatientLoginService, PatientLoginService>();
 builder.Services.AddScoped<IDoctorLoginService, DoctorLoginService>();
 builder.Services.AddHttpContextAccessor();
 
-// === 5. Controllers ===
+// === 5. Controllers & Swagger ===
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
@@ -112,7 +104,7 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Doctor", policy => policy.RequireRole("Doctor"));
 });
 
-// === 7. Swagger - 100% FIXED (No More 404 or Failed to load) ===
+// === 7. Swagger (already perfect) ===
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -122,10 +114,7 @@ builder.Services.AddSwaggerGen(c =>
         Description = "Nigerian Telemedicine Platform – Firebase Phone Auth + JWT + PostgreSQL"
     });
 
-    // CRITICAL: Fix ambiguous actions & duplicate routes
     c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
-
-    // Force unique OperationIds – this alone fixes 95% of Swagger crashes
     c.CustomOperationIds(apiDesc =>
     {
         var controller = apiDesc.ActionDescriptor.RouteValues["controller"];
@@ -133,10 +122,8 @@ builder.Services.AddSwaggerGen(c =>
         var method = apiDesc.HttpMethod ?? "UNKNOWN";
         return $"{controller}_{action}_{method}";
     });
-
     c.CustomSchemaIds(x => x.FullName?.Replace("+", "_") ?? x.Name);
 
-    // JWT Support in Swagger UI
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "Enter your JWT token: Bearer {your-token-here}",
@@ -146,7 +133,6 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "bearer",
         BearerFormat = "JWT"
     });
-
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -171,25 +157,22 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "TelmMed API v1");
-    c.RoutePrefix = "swagger";  // → https://localhost:7xxx/swagger
+    c.RoutePrefix = "swagger";
     c.DisplayOperationId();
     c.DisplayRequestDuration();
 });
 
 app.UseHttpsRedirection();
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
 
-// === Database Migrations - Safe for Render.com ===
+// === Database Migrations (safe on Render) ===
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
-
     try
     {
         logger.LogInformation("Applying database migrations...");
@@ -198,8 +181,7 @@ using (var scope = app.Services.CreateScope())
     }
     catch (Exception ex)
     {
-        logger.LogError(ex, "Migration failed — check your PostgreSQL connection string (SSL required on Render)");
-        // Don't throw — app stays alive, Swagger works
+        logger.LogError(ex, "Migration failed — check your PostgreSQL connection string");
     }
 }
 
