@@ -1,0 +1,22 @@
+# .NET build folders
+bin/
+obj/
+
+# Secrets
+*.json
+!appsettings.json
+!appsettings.*.json
+
+# Visual Studio / Rider / VSCode
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+.idea/
+
+# Other common junk
+*.log
+*.tmp
+.vs/
+.vscode/
