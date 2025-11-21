@@ -1,6 +1,5 @@
 ﻿using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
-//using Google.Cloud.Firestore; // if you use Firestore directly (optional)
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -29,18 +28,26 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connStr);
 });
 
-// === 2. Redis ===
+// === 2. Redis – RESILIENT VERSION (will NEVER crash the app) ===
 builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
-    ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379"));
+{
+    var redisConnectionString = builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379";
+
+    var options = ConfigurationOptions.Parse(redisConnectionString);
+    options.AbortOnConnectFail = false;          // ← CRITICAL: don't kill the whole app
+    options.ReconnectRetryPolicy = new LinearRetry(5000); // retry every 5 seconds
+    options.ConnectTimeout = 10000;              // 10s timeout
+    options.ConfigCheckSeconds = 30;             // background health checks
+
+    return ConnectionMultiplexer.Connect(options);
+});
 
 // === 3. Firebase Admin SDK – 100% SECURE & WORKS EVERYWHERE ===
 try
 {
     var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_SERVICE_ACCOUNT_JSON");
-
     if (!string.IsNullOrEmpty(firebaseJson))
     {
-        // Production / Render.com – use full JSON from environment variable
         FirebaseApp.Create(new AppOptions()
         {
             Credential = GoogleCredential.FromJson(firebaseJson),
@@ -49,19 +56,16 @@ try
     }
     else if (FirebaseApp.DefaultInstance == null)
     {
-        // Local development – uses your Google Cloud login (run once: gcloud auth application-default login)
         FirebaseApp.Create(new AppOptions()
         {
             Credential = GoogleCredential.GetApplicationDefault(),
             ProjectId = "telemedicine-project-5bf24"
         }, "TelmMedApp");
     }
-
     Console.WriteLine("Firebase Admin SDK initialized successfully!");
 }
 catch (Exception ex)
 {
-    // Non-fatal – phone verification & custom tokens will just be unavailable
     Console.WriteLine($"Firebase init failed (continues without Admin features): {ex.Message}");
 }
 
@@ -70,7 +74,7 @@ builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IRegistrationService, RegistrationService>();
 builder.Services.AddScoped<IDoctorRegistrationService, DoctorRegistrationService>();
 builder.Services.AddScoped<IAdminService, AdminService>();
-builder.Services.AddScoped<IRateLimiterService, RedisRateLimiterService>();
+builder.Services.AddScoped<IRateLimiterService, RedisRateLimiterService>(); // ← works safely now
 builder.Services.AddScoped<IPatientLoginService, PatientLoginService>();
 builder.Services.AddScoped<IDoctorLoginService, DoctorLoginService>();
 builder.Services.AddHttpContextAccessor();
@@ -104,7 +108,7 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Doctor", policy => policy.RequireRole("Doctor"));
 });
 
-// === 7. Swagger (already perfect) ===
+// === 7. Swagger ===
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -113,7 +117,6 @@ builder.Services.AddSwaggerGen(c =>
         Version = "v1",
         Description = "Nigerian Telemedicine Platform – Firebase Phone Auth + JWT + PostgreSQL"
     });
-
     c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
     c.CustomOperationIds(apiDesc =>
     {
@@ -123,7 +126,6 @@ builder.Services.AddSwaggerGen(c =>
         return $"{controller}_{action}_{method}";
     });
     c.CustomSchemaIds(x => x.FullName?.Replace("+", "_") ?? x.Name);
-
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "Enter your JWT token: Bearer {your-token-here}",
