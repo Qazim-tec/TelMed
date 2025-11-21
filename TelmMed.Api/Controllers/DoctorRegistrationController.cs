@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using TelmMed.Api.DTOs.Doctors;
@@ -12,71 +11,101 @@ namespace TelmMed.Api.Controllers
     public class DoctorRegistrationController : ControllerBase
     {
         private readonly IDoctorRegistrationService _service;
-        public DoctorRegistrationController(IDoctorRegistrationService service) => _service = service;
 
+        public DoctorRegistrationController(IDoctorRegistrationService service)
+        {
+            _service = service;
+        }
+
+        /// <summary>
+        /// Step 1: Verify phone number via Firebase OTP
+        /// </summary>
         [HttpPost("verify-phone")]
         public async Task<IActionResult> VerifyPhone([FromBody] VerifyPhoneRequestDto dto)
         {
-            var res = await _service.VerifyPhoneAsync(dto.FirebaseIdToken);
-            return Ok(new { res.DoctorId, res.PhoneNumber, Token = res.JwtToken });
+            if (string.IsNullOrWhiteSpace(dto.FirebaseIdToken))
+                return BadRequest(new { error = "Firebase token is required" });
+
+            var result = await _service.VerifyPhoneAsync(dto.FirebaseIdToken);
+
+            return Ok(new
+            {
+                doctorId = result.DoctorId,
+                phoneNumber = result.PhoneNumber,
+                token = result.JwtToken,
+                message = "Phone verified successfully. Proceed with registration."
+            });
         }
 
         [HttpPost("identity")]
-        [Authorize]
+        [Authorize(Policy = "Doctor")]
         public async Task<IActionResult> SaveIdentity([FromBody] IdentityRequestDto dto)
         {
-            var id = GetDoctorId();
-            await _service.SaveIdentityAsync(id, dto);
-            return Ok(new { message = "Identity saved" });
+            var doctorId = GetDoctorId();
+            await _service.SaveIdentityAsync(doctorId, dto);
+            return Ok(new { success = true, message = "Personal identity saved successfully" });
         }
 
         [HttpPost("practice")]
-        [Authorize]
+        [Authorize(Policy = "Doctor")]
         public async Task<IActionResult> SavePractice([FromBody] PracticeProfileRequestDto dto)
         {
-            var id = GetDoctorId();
-            await _service.SavePracticeAsync(id, dto);
-            return Ok(new { message = "Practice info saved" });
+            var doctorId = GetDoctorId();
+            await _service.SavePracticeAsync(doctorId, dto);
+            return Ok(new { success = true, message = "Practice profile saved successfully" });
         }
 
         [HttpPost("credentials")]
-        [Authorize]
-        public async Task<IActionResult> SaveCredentials([FromBody] CredentialsRequestDto dto)  // ← FIXED: Added [FromBody]
+        [Authorize(Policy = "Doctor")]
+        public async Task<IActionResult> SaveCredentials([FromBody] CredentialsRequestDto dto)
         {
-            var id = GetDoctorId();
-            await _service.SaveCredentialsAsync(id, dto);
-            return Ok(new { message = "Credentials uploaded" });
+            var doctorId = GetDoctorId();
+            await _service.SaveCredentialsAsync(doctorId, dto);
+            return Ok(new { success = true, message = "Credentials & documents uploaded successfully" });
         }
 
         [HttpPost("compliance")]
-        [Authorize]
+        [Authorize(Policy = "Doctor")]
         public async Task<IActionResult> SaveCompliance([FromBody] ComplianceRequestDto dto)
         {
-            var id = GetDoctorId();
-            await _service.SaveComplianceAsync(id, dto);
-            return Ok(new { message = "Compliance documents saved" });
+            var doctorId = GetDoctorId();
+            await _service.SaveComplianceAsync(doctorId, dto);
+            return Ok(new { success = true, message = "Compliance agreements accepted" });
         }
 
         [HttpPost("schedule")]
-        [Authorize]
+        [Authorize(Policy = "Doctor")]
         public async Task<IActionResult> SaveSchedule([FromBody] ScheduleRequestDto dto)
         {
-            var id = GetDoctorId();
-            await _service.SaveScheduleAsync(id, dto);
-            return Ok(new { message = "Schedule saved" });
+            var doctorId = GetDoctorId();
+            await _service.SaveScheduleAsync(doctorId, dto);
+            return Ok(new { success = true, message = "Interview schedule saved" });
         }
 
         [HttpPost("complete")]
-        [Authorize]
+        [Authorize(Policy = "Doctor")]
         public async Task<IActionResult> CompleteRegistration()
         {
-            var id = GetDoctorId();
-            var res = await _service.CompleteRegistrationAsync(id);
-            return Ok(res);
+            var doctorId = GetDoctorId();
+            var result = await _service.CompleteRegistrationAsync(doctorId);
+            return Ok(new
+            {
+                success = true,
+                result.DoctorId,
+                result.PhoneNumber,
+                result.Message
+            });
         }
 
-        private Guid GetDoctorId() =>
-            Guid.Parse(User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
-                ?? throw new UnauthorizedAccessException("Invalid token"));
+        private Guid GetDoctorId()
+        {
+            var sub = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
+                      ?? throw new UnauthorizedAccessException("Invalid or missing token");
+
+            if (!Guid.TryParse(sub, out var doctorId))
+                throw new UnauthorizedAccessException("Invalid doctor ID in token");
+
+            return doctorId;
+        }
     }
 }

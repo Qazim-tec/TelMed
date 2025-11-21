@@ -1,4 +1,4 @@
-﻿
+﻿// Services/Interfaces/IDoctorRegistrationService.cs
 using TelmMed.Api.DTOs.Doctors;
 
 namespace TelmMed.Api.Services.Interfaces
@@ -13,6 +13,8 @@ namespace TelmMed.Api.Services.Interfaces
         Task SaveScheduleAsync(Guid doctorId, ScheduleRequestDto dto);
         Task<DoctorCompleteResponseDto> CompleteRegistrationAsync(Guid doctorId);
     }
+
+
 
     public record DoctorCompleteResponseDto(
         Guid DoctorId,
