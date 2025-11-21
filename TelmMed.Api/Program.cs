@@ -28,53 +28,51 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connStr);
 });
 
-// === 2. Redis – RESILIENT VERSION (will NEVER crash the app) ===
+// === 2. Redis – Fully resilient (never crashes the app) ===
 builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
 {
     var redisConnectionString = builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379";
-
     var options = ConfigurationOptions.Parse(redisConnectionString);
-    options.AbortOnConnectFail = false;          // ← CRITICAL: don't kill the whole app
-    options.ReconnectRetryPolicy = new LinearRetry(5000); // retry every 5 seconds
-    options.ConnectTimeout = 10000;              // 10s timeout
-    options.ConfigCheckSeconds = 30;             // background health checks
-
+    options.AbortOnConnectFail = false;
+    options.ReconnectRetryPolicy = new LinearRetry(5000);
+    options.ConnectTimeout = 10000;
+    options.ConfigCheckSeconds = 30;
     return ConnectionMultiplexer.Connect(options);
 });
 
-// === 3. Firebase Admin SDK – 100% SECURE & WORKS EVERYWHERE ===
-try
+// === 3. Firebase Admin SDK – FINAL WORKING VERSION (uses DefaultInstance) ===
+var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_SERVICE_ACCOUNT_JSON");
+
+if (string.IsNullOrWhiteSpace(firebaseJson))
 {
-    var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_SERVICE_ACCOUNT_JSON");
-    if (!string.IsNullOrEmpty(firebaseJson))
+    // Local development fallback (requires gcloud auth application-default login once)
+    FirebaseApp.Create(new AppOptions()
     {
-        FirebaseApp.Create(new AppOptions()
-        {
-            Credential = GoogleCredential.FromJson(firebaseJson),
-            ProjectId = "telemedicine-project-5bf24"
-        }, "TelmMedApp");
-    }
-    else if (FirebaseApp.DefaultInstance == null)
-    {
-        FirebaseApp.Create(new AppOptions()
-        {
-            Credential = GoogleCredential.GetApplicationDefault(),
-            ProjectId = "telemedicine-project-5bf24"
-        }, "TelmMedApp");
-    }
-    Console.WriteLine("Firebase Admin SDK initialized successfully!");
+        Credential = GoogleCredential.GetApplicationDefault(),
+        ProjectId = "telemedicine-project-5bf24"
+    });
 }
-catch (Exception ex)
+else
 {
-    Console.WriteLine($"Firebase init failed (continues without Admin features): {ex.Message}");
+    // Render.com / Production – uses your env var (you already set this correctly)
+    FirebaseApp.Create(new AppOptions()
+    {
+        Credential = GoogleCredential.FromJson(firebaseJson),
+        ProjectId = "telemedicine-project-5bf24"
+    }); // ← NO CUSTOM NAME = automatically becomes the "default" instance
 }
+
+Console.WriteLine("Firebase Admin SDK initialized successfully! FirebaseAuth.DefaultInstance is ready.");
+
+// Optional safety check (uncomment if you want to be 1000% sure)
+// if (FirebaseAuth.DefaultInstance == null) throw new InvalidOperationException("FirebaseAuth failed to initialize!");
 
 // === 4. Dependency Injection ===
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IRegistrationService, RegistrationService>();
 builder.Services.AddScoped<IDoctorRegistrationService, DoctorRegistrationService>();
 builder.Services.AddScoped<IAdminService, AdminService>();
-builder.Services.AddScoped<IRateLimiterService, RedisRateLimiterService>(); // ← works safely now
+builder.Services.AddScoped<IRateLimiterService, RedisRateLimiterService>();
 builder.Services.AddScoped<IPatientLoginService, PatientLoginService>();
 builder.Services.AddScoped<IDoctorLoginService, DoctorLoginService>();
 builder.Services.AddHttpContextAccessor();
@@ -170,7 +168,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
-// === Database Migrations (safe on Render) ===
+// === Database Migrations ===
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
