@@ -2,6 +2,7 @@
 using BCrypt.Net;
 using FirebaseAdmin.Auth;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using TelmMed.Api.Data;
 using TelmMed.Api.DTOs;
 using TelmMed.Api.Models;
@@ -64,9 +65,7 @@ namespace TelmMed.Api.Services
 
             await _context.SaveChangesAsync();
 
-            // FIXED: Role "Patient" is REQUIRED
             var jwt = _jwtService.GenerateToken(patient.Id, patient.PhoneNumber, "Patient");
-
             return new VerifyPhoneResponseDto(patient.Id, patient.PhoneNumber, jwt);
         }
 
@@ -105,35 +104,50 @@ namespace TelmMed.Api.Services
             await _context.SaveChangesAsync();
         }
 
+        // FINAL FIXED VERSION – NO MORE CONCURRENCY EXCEPTION
         public async Task<CompleteRegistrationResponseDto> CompleteRegistrationAsync(
             Guid patientId, SecuritySetupRequestDto dto)
         {
             if (dto.Pin.Length != 5 || !dto.Pin.All(char.IsDigit))
                 throw new ArgumentException("PIN must be exactly 5 digits.");
 
-            var p = await GetPatientAsync(patientId);
-            p.PinHash = BCrypt.Net.BCrypt.HashPassword(dto.Pin);
-            p.BiometricEnabled = dto.EnableBiometric;
+            var patient = await GetPatientAsync(patientId); // Includes EmergencyContacts – kept for future edits
 
-            // Only Patient has EmergencyContacts
+            patient.PinHash = BCrypt.Net.BCrypt.HashPassword(dto.Pin);
+            patient.BiometricEnabled = dto.EnableBiometric;
+            patient.UpdatedAt = DateTime.UtcNow;
+
+            // CRITICAL FIX: Properly handle emergency contacts during registration
+            // Remove any existing (should be none, but safe)
+            foreach (var contact in patient.EmergencyContacts.ToList())
+            {
+                _context.EmergencyContacts.Remove(contact);
+            }
+            patient.EmergencyContacts.Clear();
+
+            // Add new contacts with explicit PatientId and correct EntityState
             foreach (var ec in dto.EmergencyContacts)
             {
-                p.EmergencyContacts.Add(new EmergencyContact
+                var emergencyContact = new EmergencyContact
                 {
+                    PatientId = patientId, // Explicit FK
                     Name = ec.Name,
                     PhoneNumber = NormalizePhoneNumber(ec.PhoneNumber),
                     Relationship = ec.Relationship,
                     AllowLocationTracking = ec.AllowLocationTracking
-                });
+                };
+
+                // This ensures EF knows it's a new record
+                _context.Entry(emergencyContact).State = EntityState.Added;
+                patient.EmergencyContacts.Add(emergencyContact);
             }
 
-            p.UpdatedAt = DateTime.UtcNow;
             await _context.SaveChangesAsync();
 
             return new CompleteRegistrationResponseDto(
-                p.Id,
-                p.PhoneNumber,
-                "Registration completed successfully."
+                patient.Id,
+                patient.PhoneNumber,
+                "Registration completed successfully!"
             );
         }
 
