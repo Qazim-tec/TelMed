@@ -11,12 +11,12 @@ namespace TelmMed.Api.Services
     {
         private readonly AppDbContext _context;
         private readonly IJwtService _jwtService;
-        private readonly RegistrationService _registrationService; // We inject it to reuse NormalizePhoneNumber
+        private readonly IRegistrationService _registrationService; // ← NOW USING INTERFACE
 
         public PatientLoginService(
             AppDbContext context,
             IJwtService jwtService,
-            RegistrationService registrationService)
+            IRegistrationService registrationService) // ← INTERFACE
         {
             _context = context;
             _jwtService = jwtService;
@@ -52,7 +52,6 @@ namespace TelmMed.Api.Services
             if (newPin.Length != 5 || !newPin.All(char.IsDigit))
                 throw new ArgumentException("New PIN must be exactly 5 digits.");
 
-            // Verify Firebase OTP
             var decoded = await FirebaseAuth.DefaultInstance.VerifyIdTokenAsync(firebaseIdToken);
             var otpPhone = decoded.Claims["phone_number"]?.ToString()
                 ?? throw new UnauthorizedAccessException("Invalid OTP.");
@@ -74,7 +73,7 @@ namespace TelmMed.Api.Services
             return _jwtService.GenerateToken(patient.Id, patient.PhoneNumber, "Patient");
         }
 
-        // EXACT SAME METHOD FROM YOUR RegistrationService – NO MORE ERRORS!
+        // Reuse the exact same logic from RegistrationService
         private string NormalizePhoneNumber(string phone)
         {
             var trimmed = phone.Trim();
