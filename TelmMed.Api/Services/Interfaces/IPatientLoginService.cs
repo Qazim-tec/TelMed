@@ -1,10 +1,10 @@
-﻿using TelmMed.Api.DTOs;
-
+﻿// Services/Interfaces/IPatientLoginService.cs
 namespace TelmMed.Api.Services.Interfaces
 {
     public interface IPatientLoginService
     {
-        Task<bool> ValidatePhoneAsync(string phoneNumber);
-        Task<LoginResponseDto> VerifyPinAsync(Guid patientId, string pin, bool useBiometric);
+        Task<string> LoginWithPinAsync(string phoneNumber, string pin);
+        Task RequestPinResetAsync(string phoneNumber);
+        Task<string> ResetPinWithOtpAsync(string phoneNumber, string firebaseIdToken, string newPin);
     }
 }

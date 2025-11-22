@@ -1,94 +1,81 @@
-﻿// Services/RateLimiter/PatientLoginService.cs
+﻿// Services/PatientLoginService.cs
 using BCrypt.Net;
+using FirebaseAdmin.Auth;
 using Microsoft.EntityFrameworkCore;
 using TelmMed.Api.Data;
-using TelmMed.Api.DTOs;
-using TelmMed.Api.Models;
 using TelmMed.Api.Services.Interfaces;
-using TelmMed.Api.Services.RateLimiter;
 
-namespace TelmMed.Api.Services.RateLimiter
+namespace TelmMed.Api.Services
 {
     public class PatientLoginService : IPatientLoginService
     {
         private readonly AppDbContext _context;
         private readonly IJwtService _jwtService;
-        private readonly IRateLimiterService _rateLimiter;
-        private readonly IConfiguration _config;
+        private readonly RegistrationService _registrationService; // We inject it to reuse NormalizePhoneNumber
 
         public PatientLoginService(
             AppDbContext context,
             IJwtService jwtService,
-            IRateLimiterService rateLimiter,
-            IConfiguration config)
+            RegistrationService registrationService)
         {
             _context = context;
             _jwtService = jwtService;
-            _rateLimiter = rateLimiter;
-            _config = config;
+            _registrationService = registrationService;
         }
 
-        public async Task<bool> ValidatePhoneAsync(string phoneNumber)
+        public async Task<string> LoginWithPinAsync(string phoneNumber, string pin)
         {
-            var normalized = NormalizePhone(phoneNumber);
+            var normalized = NormalizePhoneNumber(phoneNumber);
 
-            var allowed = await _rateLimiter.IsAllowedAsync(
-                $"login-phone:{normalized}",
-                _config.GetValue<int>("RateLimiting:Login:MaxAttempts", 10),
-                _config.GetValue<int>("RateLimiting:Login:WindowSeconds", 900));
-
-            if (!allowed)
-                throw new UnauthorizedAccessException("Too many login attempts. Try again later.");
-
-            return await _context.Patients
-                .AnyAsync(p => p.PhoneNumber == normalized && p.IsPhoneVerified);
-        }
-
-        public async Task<LoginResponseDto> VerifyPinAsync(Guid patientId, string pin, bool useBiometric = false)
-        {
             var patient = await _context.Patients
-                .FirstOrDefaultAsync(p => p.Id == patientId && p.IsPhoneVerified)
-                ?? throw new UnauthorizedAccessException("Patient not found or phone not verified.");
+                .FirstOrDefaultAsync(p => p.PhoneNumber == normalized && p.PinHash != null);
 
-            var loginKey = $"login-pin:{patientId}";
+            if (patient == null || !BCrypt.Net.BCrypt.Verify(pin, patient.PinHash))
+                throw new UnauthorizedAccessException("Invalid phone number or PIN.");
 
-            // Rate limit per patient
-            var allowed = await _rateLimiter.IsAllowedAsync(loginKey, 5, 300);
-            if (!allowed)
-                throw new UnauthorizedAccessException("Too many failed attempts. Try again in 5 minutes.");
-
-            bool pinValid = !string.IsNullOrEmpty(patient.PinHash) &&
-                           BCrypt.Net.BCrypt.Verify(pin, patient.PinHash);
-
-            // Biometric: Skip PIN if enabled and requested
-            if (useBiometric && patient.BiometricEnabled)
-            {
-                // In production: Validate biometric signature from client
-                // For now: Trust if enabled
-                await _rateLimiter.ResetAsync(loginKey); // Success
-            }
-            else if (!pinValid)
-            {
-                await _rateLimiter.RecordFailureAsync(loginKey);
-                throw new UnauthorizedAccessException("Incorrect PIN.");
-            }
-            else
-            {
-                await _rateLimiter.ResetAsync(loginKey); // Success
-            }
-
-            // FIXED: Role "Patient" is REQUIRED
-            var token = _jwtService.GenerateToken(patient.Id, patient.PhoneNumber, "Patient");
-
-            return new LoginResponseDto(
-                patient.Id,
-                patient.PhoneNumber,
-                token,
-                patient.BiometricEnabled
-            );
+            return _jwtService.GenerateToken(patient.Id, patient.PhoneNumber, "Patient");
         }
 
-        public static string NormalizePhone(string phone)
+        public async Task RequestPinResetAsync(string phoneNumber)
+        {
+            var normalized = NormalizePhoneNumber(phoneNumber);
+
+            var exists = await _context.Patients
+                .AnyAsync(p => p.PhoneNumber == normalized && p.IsPhoneVerified && p.PinHash != null);
+
+            if (!exists)
+                throw new KeyNotFoundException("No registered patient found with this phone number.");
+        }
+
+        public async Task<string> ResetPinWithOtpAsync(string phoneNumber, string firebaseIdToken, string newPin)
+        {
+            if (newPin.Length != 5 || !newPin.All(char.IsDigit))
+                throw new ArgumentException("New PIN must be exactly 5 digits.");
+
+            // Verify Firebase OTP
+            var decoded = await FirebaseAuth.DefaultInstance.VerifyIdTokenAsync(firebaseIdToken);
+            var otpPhone = decoded.Claims["phone_number"]?.ToString()
+                ?? throw new UnauthorizedAccessException("Invalid OTP.");
+
+            var normalizedInput = NormalizePhoneNumber(phoneNumber);
+            var normalizedOtp = NormalizePhoneNumber(otpPhone);
+
+            if (normalizedInput != normalizedOtp)
+                throw new UnauthorizedAccessException("Phone number does not match OTP.");
+
+            var patient = await _context.Patients
+                .FirstOrDefaultAsync(p => p.PhoneNumber == normalizedInput)
+                ?? throw new KeyNotFoundException("Patient not found.");
+
+            patient.PinHash = BCrypt.Net.BCrypt.HashPassword(newPin);
+            patient.UpdatedAt = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+
+            return _jwtService.GenerateToken(patient.Id, patient.PhoneNumber, "Patient");
+        }
+
+        // EXACT SAME METHOD FROM YOUR RegistrationService – NO MORE ERRORS!
+        private string NormalizePhoneNumber(string phone)
         {
             var trimmed = phone.Trim();
             return trimmed.StartsWith("+") ? trimmed : "+234" + trimmed.TrimStart('0');
