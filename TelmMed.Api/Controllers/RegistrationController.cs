@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿// Controllers/RegistrationController.cs
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.IdentityModel.Tokens.Jwt; 
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using TelmMed.Api.DTOs;
 using TelmMed.Api.Services.Interfaces;
 
@@ -28,12 +30,16 @@ namespace TelmMed.Api.Controllers
                     result.PatientId,
                     result.PhoneNumber,
                     Token = result.JwtToken,
-                    ExpiresIn = 86400
+                    ExpiresIn = 86400 // 24 hours
                 });
             }
             catch (UnauthorizedAccessException ex)
             {
                 return Unauthorized(new { error = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "Phone verification failed.", details = ex.Message });
             }
         }
 
@@ -43,7 +49,7 @@ namespace TelmMed.Api.Controllers
         {
             var patientId = GetPatientId();
             await _service.SaveCategoriesAsync(patientId, dto.Categories);
-            return Ok(new { success = true });
+            return Ok(new { success = true, message = "Categories saved successfully." });
         }
 
         [Authorize]
@@ -52,7 +58,7 @@ namespace TelmMed.Api.Controllers
         {
             var patientId = GetPatientId();
             await _service.SaveLanguagePreferencesAsync(patientId, dto);
-            return Ok(new { success = true });
+            return Ok(new { success = true, message = "Language preferences saved." });
         }
 
         [Authorize]
@@ -61,7 +67,7 @@ namespace TelmMed.Api.Controllers
         {
             var patientId = GetPatientId();
             await _service.SavePersonalInfoAsync(patientId, dto);
-            return Ok(new { success = true });
+            return Ok(new { success = true, message = "Personal info saved." });
         }
 
         [Authorize]
@@ -70,16 +76,32 @@ namespace TelmMed.Api.Controllers
         {
             var patientId = GetPatientId();
             var result = await _service.CompleteRegistrationAsync(patientId, dto);
-            return Ok(result);
+            return Ok(new
+            {
+                success = true,
+                message = "Registration completed successfully!",
+                patientId = result.PatientId,
+                phoneNumber = result.PhoneNumber
+            });
         }
 
-        // FIXED: Now works with JwtRegisteredClaimNames
+        /// <summary>
+        /// BULLETPROOF Patient ID Extractor
+        /// Works with .NET 6, 7, 8, 9+ and any JwtBearer mapping quirks
+        /// </summary>
         private Guid GetPatientId()
         {
-            var sub = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
-                      ?? throw new UnauthorizedAccessException("Invalid token.");
+            var claimValue = User.FindFirst("sub")?.Value
+                          ?? User.FindFirst(ClaimTypes.NameIdentifier)?.Value
+                          ?? User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
 
-            return Guid.Parse(sub);
+            if (string.IsNullOrWhiteSpace(claimValue))
+                throw new UnauthorizedAccessException("Invalid or missing token: 'sub' claim not found.");
+
+            if (!Guid.TryParse(claimValue, out var patientId))
+                throw new UnauthorizedAccessException("Invalid patient ID format in token.");
+
+            return patientId;
         }
     }
 }
